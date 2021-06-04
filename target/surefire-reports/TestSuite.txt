@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 34.341 s <<< FAILURE! - in TestSuite
+testLogin(com.lemon.testcase.TestLogin)  Time elapsed: 14.043 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: com.lemon.lemonban:id/fragment_my_lemon_avatar_title (tried for 5 second(s) with 500 milliseconds interval)
+	at com.lemon.testcase.TestLogin.testLogin(TestLogin.java:39)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-7UDD78N3', ip: '192.168.102.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.lemon.lemonban.activity..., appPackage: com.lemon.lemonban, databaseEnabled: false, desired: {appActivity: com.lemon.lemonban.activity..., appPackage: com.lemon.lemonban, deviceName: 127.0.0.1:62001, platformName: android}, deviceApiLevel: 25, deviceManufacturer: samsung, deviceModel: SM-G973N, deviceName: 127.0.0.1:62001, deviceScreenDensity: 320, deviceScreenSize: 1080x1920, deviceUDID: 127.0.0.1:62001, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 7.1.2, statBarHeight: 48, takesScreenshot: true, viewportRect: {height: 1872, left: 0, top: 48, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 36c15a14-6884-45a1-aae5-eede0d46d164
+*** Element info: {Using=id, value=com.lemon.lemonban:id/fragment_my_lemon_avatar_title}
+	at com.lemon.testcase.TestLogin.testLogin(TestLogin.java:39)
+
+tearDown(com.lemon.testcase.TestLogin)  Time elapsed: 22.278 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-7UDD78N3', ip: '192.168.102.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.lemon.lemonban.activity..., appPackage: com.lemon.lemonban, databaseEnabled: false, desired: {appActivity: com.lemon.lemonban.activity..., appPackage: com.lemon.lemonban, deviceName: 127.0.0.1:62001, platformName: android}, deviceApiLevel: 25, deviceManufacturer: samsung, deviceModel: SM-G973N, deviceName: 127.0.0.1:62001, deviceScreenDensity: 320, deviceScreenSize: 1080x1920, deviceUDID: 127.0.0.1:62001, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 7.1.2, statBarHeight: 48, takesScreenshot: true, viewportRect: {height: 1872, left: 0, top: 48, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 36c15a14-6884-45a1-aae5-eede0d46d164
+*** Element info: {Using=accessibility id, value=我的柠檬}
+	at com.lemon.testcase.TestLogin.tearDown(TestLogin.java:46)
+
